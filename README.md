@@ -28,7 +28,7 @@
 - lodash 提供 一些工具方法，比如克隆 
 
 ```js
-yarn add react react-dom react-router-dom 
+yarn add react react-dom react-router-dom  react-transition-group
 yarn add  babel-loader @babel/core @babel/preset-env @babel/preset-react html-webpack-plugin
 yarn add redux react-redux redux-logger redux-promise redux-thunk react-router-redux
 yarn add  style-loader css-loader less-loader less url-loader

@@ -1,0 +1,2 @@
+//修改当前的分类
+export const CHANGE_CURRENT_CATEGORY = 'CHANGE_CURRENT_CATEGORY';

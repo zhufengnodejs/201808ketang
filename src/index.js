@@ -6,7 +6,10 @@ import Home from './containers/Home';
 import Mime from './containers/Mime';
 import Profile from './containers/Profile';
 import Layout from './containers/Layout';
-ReactDOM.render(<Router>
+import {Provider} from 'react-redux';
+import store from './store';
+ReactDOM.render(<Provider store={store}>
+<Router>
     <Layout>
         <Switch>
             <Route exact path="/" component={Home} />
@@ -14,5 +17,6 @@ ReactDOM.render(<Router>
             <Route path="/profile" component={Profile} />
         </Switch>
     </Layout>
-</Router>,
+</Router>
+</Provider>,
     document.querySelector('#root'));
