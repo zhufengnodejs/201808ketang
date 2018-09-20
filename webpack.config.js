@@ -22,6 +22,14 @@ module.exports = {
                 include: path.resolve('src'),
                 //我要排除转译哪些目录的文件
                 exclude: /node_modules/
+            },
+            {
+                test: /\.less$/,//处理LESS
+                use: ['style-loader', 'css-loader', 'less-loader']
+            },
+            {
+                test: /\.(jpg|png|gif)/,//处理图片
+                use: ['url-loader']
             }
         ]
     }
