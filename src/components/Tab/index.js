@@ -4,8 +4,8 @@ import {NavLink} from 'react-router-dom';
 export default class Tab extends Component {
     render() {
         return (
-            <nav>
-                <NavLink to="/" activeClassName="active">
+            <nav className="navbar">
+                <NavLink exact to="/" activeClassName="active">
                     <i className="iconfont icon-xingqiu"></i>
                     <span>首页</span>
                 </NavLink>
