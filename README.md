@@ -81,3 +81,13 @@ module.exports = {
     }
 }
 ```
+
+
+## 跑通路由
+
+### 目录划分
+- index.js  入口文件
+- containers 页面级组件
+- components 可复用的木偶组件
+- common 放一些资源文件公共样式，图片
+- utils 放一些工具方法
