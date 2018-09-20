@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 //webpack的配置文件
 module.exports = {
+    mode: 'development',
     entry: './src/index.js',
     output: {
         path: path.resolve('dist'),
