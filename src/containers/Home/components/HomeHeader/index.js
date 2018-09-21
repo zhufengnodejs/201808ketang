@@ -12,7 +12,7 @@ export default class HomeHeader extends Component {
     }
     render() {
         let {menuShow} = this.state;
-        let {currentCategory,changeCurrentCategory}  = this.props;
+        let {currentCategory,changeCurrentCategory }  = this.props;
         let uiList = (
                 <CSSTransition
                   timeout={500}

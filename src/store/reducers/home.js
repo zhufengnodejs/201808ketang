@@ -1,6 +1,7 @@
 import * as types from '../action-types';
 let initState = {
-    currentCategory:'all'
+    currentCategory:'all'，
+    sliders:[]//此处存放轮播图的数据
 }
 export default function(state=initState,action){
     switch(action.type){

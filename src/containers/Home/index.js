@@ -1,21 +1,26 @@
-import React, { Component } from 'react';
+import React, { Component,Fragment } from 'react';
 import HomeHeader from './components/HomeHeader';
-import {connect} from 'react-redux';
+import HomeSwipe from './components/HomeSwipe';
+import { connect } from 'react-redux';
 import actions from '@/store/actions/home';
-class Home extends Component{
-    render(){
-        let {currentCategory,changeCurrentCategory}  = this.props;
+import './index.less'
+class Home extends Component {
+    render() {
+        let { currentCategory, changeCurrentCategory } = this.props;
         return (
-            <div className="home">
+            <Fragment>
                 <HomeHeader
-                  currentCategory={currentCategory}
-                  changeCurrentCategory={changeCurrentCategory}
+                    currentCategory={currentCategory}
+                    changeCurrentCategory={changeCurrentCategory}
                 />
-            </div>
+                <div className="main-content">
+                    <HomeSwipe/>
+                </div>
+            </Fragment>
         )
     }
 }
 export default connect(
-    state=>state.home,
+    state => state.home,
     actions
 )(Home);
