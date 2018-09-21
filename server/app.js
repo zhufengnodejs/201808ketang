@@ -32,12 +32,11 @@ app.get('/getLessons/:category',function(req,res){
   }
   let total = list.length;//此分类下面的总条数
   list = list.slice(offset,offset+limit);//截取当前页的数据
-  setTimeout(function(){
-    res.json({
+  list.forEach(item=>item.title = item.title + Math.random());
+  res.json({
       list,
       hasMore:total>offset+limit
-    });
-  },1000);
+  });
 });
 
 app.listen(3000);

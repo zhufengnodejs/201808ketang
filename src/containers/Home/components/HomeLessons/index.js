@@ -20,10 +20,7 @@ export default class HomeLessons extends Component {
                     ))
                 }
                 {
-                    loading?<Loading/>: <div 
-                    onClick={hasMore?getLessons:null}
-                    className="load-more"
-                    >{hasMore?'点击加载更多':'后面没有了'}</div>
+                    loading?(hasMore&&<Loading/>):(!hasMore&&<div className="load-more">后面没有了</div>)
                 }
             </div>
         )

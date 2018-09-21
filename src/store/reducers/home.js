@@ -31,7 +31,18 @@ export default function(state=initState,action){
                     ...state.lessons,
                     loading:action.payload
                 }
-            }   
+            };
+        case types.REFRESH_HOME_LESSONS:
+        return {
+                ...state,
+                lessons:{
+                    ...state.lessons,
+                    list:action.payload.list,
+                    loading:false,
+                    offset:action.payload.list.length,
+                    hasMore:action.payload.hasMore
+                }
+        }    
         default:
           return state;   
     }

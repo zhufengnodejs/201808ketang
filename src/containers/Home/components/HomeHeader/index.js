@@ -9,6 +9,8 @@ export default class HomeHeader extends Component {
     handleCategoryChange = (event)=>{
         let type = event.target.dataset.type;
         this.props.changeCurrentCategory(type);
+        this.props.refreshLessons();
+        this.setState({menuShow:false});
     }
     render() {
         let {menuShow} = this.state;
