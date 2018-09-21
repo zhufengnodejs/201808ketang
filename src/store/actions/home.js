@@ -8,6 +8,7 @@ export default {
         //Actions must be plain objects. Use custom middleware for async actions
         // dispatch(action);
         return function(dispatch,getState){
+            //调用后台接口，得到返回值，再派发真正action
             getSliders().then(sliders=>{
                 dispatch({
                     type:types.SET_HOME_SLIDERS,

@@ -6,7 +6,7 @@ module.exports = [
     poster:"http://www.zhufengpeixun.cn/react/img/react.jpg",
     url: 'http://www.zhufengpeixun.cn/themes/jianmo2/images/react.png',
     price: '¥100.00元',
-    type:'react'
+    category:'react'
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ module.exports = [
     poster:"http://www.zhufengpeixun.cn/react/img/react.jpg",
     url: 'http://www.zhufengpeixun.cn/themes/jianmo2/images/react.png',
     price: '¥200.00元',
-    type:'react'
+    category:'react'
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ module.exports = [
     poster:"http://www.zhufengpeixun.cn/react/img/react.jpg",
     url: 'http://www.zhufengpeixun.cn/themes/jianmo2/images/react.png',
     price: '¥300.00元',
-    type:'react'
+    category:'react'
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ module.exports = [
     poster:"http://www.zhufengpeixun.cn/react/img/react.jpg",
     url: 'http://www.zhufengpeixun.cn/themes/jianmo2/images/react.png',
     price: '¥400.00元',
-    type:'react'
+    category:'react'
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ module.exports = [
     poster:"http://www.zhufengpeixun.cn/react/img/react.jpg",
     url: 'http://www.zhufengpeixun.cn/themes/jianmo2/images/react.png',
     price: '¥500.00元',
-    type:'react'
+    category:'react'
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ module.exports = [
     poster:"http://www.zhufengpeixun.cn/vue/img/vue.png",
     url: 'http://www.zhufengpeixun.cn/themes/jianmo2/images/vue.png',
     price: '¥100.00元',
-    type:'vue'
+    category:'vue'
   },
   {
     id: 7,
@@ -60,7 +60,7 @@ module.exports = [
     poster:"http://www.zhufengpeixun.cn/vue/img/vue.png",
     url: 'http://www.zhufengpeixun.cn/themes/jianmo2/images/vue.png',
     price: '¥200.00元',
-    type:'vue'
+    category:'vue'
   },
   {
     id: 8,
@@ -69,7 +69,7 @@ module.exports = [
     poster:"http://www.zhufengpeixun.cn/vue/img/vue.png",
     url: 'http://www.zhufengpeixun.cn/themes/jianmo2/images/vue.png',
     price: '¥300.00元',
-    type:'vue'
+    category:'vue'
   },
   {
     id: 9,
@@ -78,7 +78,7 @@ module.exports = [
     poster:"http://www.zhufengpeixun.cn/vue/img/vue.png",
     url: 'http://www.zhufengpeixun.cn/themes/jianmo2/images/vue.png',
     price: '¥400.00元',
-    type:'vue'
+    category:'vue'
   },
   {
     id: 10,
@@ -87,7 +87,7 @@ module.exports = [
     poster:"http://www.zhufengpeixun.cn/vue/img/vue.png",
     url: 'http://www.zhufengpeixun.cn/themes/jianmo2/images/vue.png',
     price: '¥500.00元',
-    type:'vue'
+    category:'vue'
   },
   {
     id: 11,
@@ -96,7 +96,7 @@ module.exports = [
     poster:"http://www.zhufengpeixun.cn/react/img/react.jpg",
     url: 'http://www.zhufengpeixun.cn/themes/jianmo2/images/react.png',
     price: '¥600.00元',
-    type:'react'
+    category:'react'
   },
   {
     id: 12,
@@ -105,7 +105,7 @@ module.exports = [
     poster:"http://www.zhufengpeixun.cn/react/img/react.jpg",
     url: 'http://www.zhufengpeixun.cn/themes/jianmo2/images/react.png',
     price: '¥700.00元',
-    type:'react'
+    category:'react'
   },
   {
     id: 13,
@@ -114,7 +114,7 @@ module.exports = [
     poster:"http://www.zhufengpeixun.cn/react/img/react.jpg",
     url: 'http://www.zhufengpeixun.cn/themes/jianmo2/images/react.png',
     price: '¥800.00元',
-    type:'react'
+    category:'react'
   },
   {
     id: 14,
@@ -123,7 +123,7 @@ module.exports = [
     poster:"http://www.zhufengpeixun.cn/react/img/react.jpg",
     url: 'http://www.zhufengpeixun.cn/themes/jianmo2/images/react.png',
     price: '¥900.00元',
-    type:'react'
+    category:'react'
   },
   {
     id: 15,
@@ -132,7 +132,7 @@ module.exports = [
     poster:"http://www.zhufengpeixun.cn/react/img/react.jpg",
     url: 'http://www.zhufengpeixun.cn/themes/jianmo2/images/react.png',
     price: '¥1000.00元',
-    type:'react'
+    category:'react'
   },
   {
     id: 16,
@@ -141,7 +141,7 @@ module.exports = [
     poster:"http://www.zhufengpeixun.cn/vue/img/vue.png",
     url: 'http://www.zhufengpeixun.cn/themes/jianmo2/images/vue.png',
     price: '¥600.00元',
-    type:'vue'
+    category:'vue'
   },
   {
     id: 17,
@@ -150,7 +150,7 @@ module.exports = [
     poster:"http://www.zhufengpeixun.cn/vue/img/vue.png",
     url: 'http://www.zhufengpeixun.cn/themes/jianmo2/images/vue.png',
     price: '¥700.00元',
-    type:'vue'
+    category:'vue'
   },
   {
     id: 18,
@@ -159,7 +159,7 @@ module.exports = [
     poster:"http://www.zhufengpeixun.cn/vue/img/vue.png",
     url: 'http://www.zhufengpeixun.cn/themes/jianmo2/images/vue.png',
     price: '¥800.00元',
-    type:'vue'
+    category:'vue'
   },
   {
     id: 19,
@@ -168,7 +168,7 @@ module.exports = [
     poster:"http://www.zhufengpeixun.cn/vue/img/vue.png",
     url: 'http://www.zhufengpeixun.cn/themes/jianmo2/images/vue.png',
     price: '¥900.00元',
-    type:'vue'
+    category:'vue'
   },
   {
     id: 20,
@@ -177,6 +177,6 @@ module.exports = [
     poster:"http://www.zhufengpeixun.cn/vue/img/vue.png",
     url: 'http://www.zhufengpeixun.cn/themes/jianmo2/images/vue.png',
     price: '¥1000.00元',
-    type:'vue'
+    category:'vue'
   }
 ]
