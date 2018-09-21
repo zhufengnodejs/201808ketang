@@ -1,5 +1,7 @@
 let express = require('express');
+let bodyParser = require('body-parser');
 let app = express();
+
 //const _ = require('lodash');
 //let cors = require('cors');
 //CORS
@@ -15,6 +17,7 @@ app.use(function(req,res,next){
     next();
   }
 });
+app.use(bodyParser.json());
 let sliders = require('./mock/sliders');
 app.get('/getSliders',function(req,res){
    res.json(sliders);
@@ -37,6 +40,30 @@ app.get('/getLessons/:category',function(req,res){
       list,
       hasMore:total>offset+limit
   });
+});
+//此数组存放着用户信息
+let users = [];
+app.post('/reg',function(req,res){
+  let user = req.body;//得到请求体 body-parser中间件
+  users.push(user);
+  res.json({
+    success:'用户注册成功!'
+  });
+});
+app.post('/login',function(req,res){
+  let body = req.body;//得到请求体 body-parser中间件{username,password}
+  let user = users.find(item=>item.username== body.username && item.password == body.password);
+  if(user){
+    res.json({
+      user,
+      success:'用户登录成功!'
+    });
+  }else{
+    res.json({
+      error:'用户登录失败!'
+    });
+  }
+  
 });
 
 app.listen(3000);

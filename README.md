@@ -99,3 +99,11 @@ module.exports = {
 4. 在前台调用，并且把得到的数据以action形式发送到仓库中 师傅给你面包
 5. 仓库收到action之后，需要调用reducer处理action,改变仓库数据 吃就是处理的过程 ，然后改变胃里的数据
 6. 在组件里实现了仓库和组件的连接，组件要刷新 各个器官得到营养，刷新一下 
+
+
+## 使用 react-router-redux
+-  创建history
+-  使用中间件
+-  使用routerReducer
+-  使用ConnectedRouter
+- push

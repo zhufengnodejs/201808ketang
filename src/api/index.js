@@ -10,12 +10,12 @@ export function get(url){ //   url=/getSliders
 }
 
 export function post(url,data){
-    return fetch(url,{
+    return fetch(HOST+url,{
         method:"POST",
         headers:{
             "Content-Type":"application/json",//告诉服务器请求体的类型是json
             "Accept":"application/json"//告诉 服务器我客户端想接收json
         },
-        body:JSON.stringify(HOST+data)
+        body:JSON.stringify(data)
     }).then(response=>response.json());
 }
