@@ -5,8 +5,11 @@ import { connect } from 'react-redux';
 import actions from '@/store/actions/home';
 import './index.less'
 class Home extends Component {
+    componentDidMount(){
+        this.props.getSliders();
+    }
     render() {
-        let { currentCategory, changeCurrentCategory } = this.props;
+        let { currentCategory, changeCurrentCategory,sliders } = this.props;
         return (
             <Fragment>
                 <HomeHeader
@@ -14,7 +17,7 @@ class Home extends Component {
                     changeCurrentCategory={changeCurrentCategory}
                 />
                 <div className="main-content">
-                    <HomeSwipe/>
+                    <HomeSwipe sliders={sliders}/>
                 </div>
             </Fragment>
         )
