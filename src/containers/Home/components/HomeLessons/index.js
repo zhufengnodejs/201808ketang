@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import Loading from '@/components/Loading';
 import './index.less'
 export default class HomeLessons extends Component {
     render() {
-        let {list,hasMore,loading} = this.props.lessons;
+        let {getLessons,lessons:{list,hasMore,loading}} = this.props;
         return (
             <div className="home-lessons">
-                <div>
+                <div className="lessons-title">
                     <i className="iconfont icon-kecheng-copy"></i>
                     <span>全部课程</span>
                 </div>
@@ -17,6 +18,12 @@ export default class HomeLessons extends Component {
                             <p>{item.price}</p>
                         </div>
                     ))
+                }
+                {
+                    loading?<Loading/>: <div 
+                    onClick={hasMore?getLessons:null}
+                    className="load-more"
+                    >{hasMore?'点击加载更多':'后面没有了'}</div>
                 }
             </div>
         )

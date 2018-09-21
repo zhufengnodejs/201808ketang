@@ -20,7 +20,7 @@ class Home extends Component {
                 />
                 <div className="main-content">
                     <HomeSwipe sliders={sliders}/>
-                    <HomeLessons lessons={lessons}/>
+                    <HomeLessons lessons={lessons} getLessons={this.props.getLessons}/>
                 </div>
             </Fragment>
         )

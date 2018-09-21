@@ -21,6 +21,10 @@ export default {
         return function(dispatch,getState){
             let {currentCategory,lessons:{offset,limit,loading}} = getState().home;
             if(!loading){//如果说已经在加载过程中了，再调用此方法会被忽略
+                dispatch({
+                    type:types.SET_HOME_LESSONS_LOADING,
+                    payload:true
+                });
                 getLessons(currentCategory,offset,limit).then(function(payload){
                     dispatch({
                         type:types.SET_HOME_LESSONS,
