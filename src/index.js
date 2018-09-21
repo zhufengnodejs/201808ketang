@@ -5,6 +5,7 @@ import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './containers/Home';
 import Mime from './containers/Mime';
 import Profile from './containers/Profile';
+import Detail from './containers/Detail';
 import Layout from './containers/Layout';
 import {Provider} from 'react-redux';
 import store from './store';
@@ -15,6 +16,7 @@ ReactDOM.render(<Provider store={store}>
             <Route exact path="/" component={Home} />
             <Route path="/mime" component={Mime} />
             <Route path="/profile" component={Profile} />
+            <Route path="/detail" component={Detail} />
         </Switch>
     </Layout>
 </Router>
