@@ -16,6 +16,14 @@ export default function(state=initState,action){
            return {...state,currentCategory:action.payload};
         case types.SET_HOME_SLIDERS:
            return {...state,sliders:action.payload};
+        case types.SET_HOME_LESSONS:
+           return {...state,lessons:{
+               ...state.lessons,
+               list:[...state.lessons.list,...action.payload.list],
+               hasMore:action.payload.hasMore,
+               offset:state.lessons.offset+action.payload.list.length,
+               loading:false
+           }};    
         default:
           return state;   
     }
